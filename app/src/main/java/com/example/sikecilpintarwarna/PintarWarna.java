@@ -87,6 +87,14 @@ public class PintarWarna extends AppCompatActivity {
                 }else {
                     colorOut.setShadowLayer(0,0,0, color[0]);
                 }
+
+                if (player[0] != null) {
+                    player[0].release();
+                    player[0] = null;
+                }
+
+                player[0] = MediaPlayer.create(PintarWarna.this, audioResource[index[0]]);
+                player[0].start();
             }
         });
 
@@ -108,6 +116,14 @@ public class PintarWarna extends AppCompatActivity {
                 }else {
                     colorOut.setShadowLayer(0,0,0, color[0]);
                 }
+
+                if (player[0] != null) {
+                    player[0].release();
+                    player[0] = null;
+                }
+
+                player[0] = MediaPlayer.create(PintarWarna.this, audioResource[index[0]]);
+                player[0].start();
             }
         });
 
