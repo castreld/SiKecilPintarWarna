@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/mainactivitybg">
-
+    <!-- aowkaokoa -->
     <Button
         android:id="@+id/startButton"
         android:layout_width="193dp"
