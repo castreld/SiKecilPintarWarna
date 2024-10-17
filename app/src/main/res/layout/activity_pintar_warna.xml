@@ -1,86 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PintarWarna"
-    android:orientation="vertical"
     android:background="@drawable/back_level">
 
     <Button
         android:id="@+id/menuButton"
         android:layout_width="116dp"
         android:layout_height="89dp"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="30dp"
-        android:background="#00000000" />
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginEnd="24dp"
+        app:layout_constraintMarginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ballOut"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginLeft="100dp"
-        android:background="@drawable/base_bola"/>
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/base_bola"
+        app:layout_constraintMarginStart="80dp"
+        app:layout_constraintMarginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="220dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="-360dp"
-        android:background="@drawable/rectangle_bubble"/>
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/rectangle_bubble"
+        app:layout_constraintMarginStart="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/playButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="155dp"
-        android:background="@drawable/play"/>
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/play"
+        app:layout_constraintMarginStart="160dp"
+        app:layout_constraintMarginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ballOut" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="140dp"
         android:layout_height="73dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="55dp"
-        android:background="#00000000" />
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintMarginBottom="30dp"
+        app:layout_constraintMarginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="133dp"
+        android:layout_width="153dp"
         android:layout_height="73dp"
-        android:layout_marginLeft="210dp"
-        android:layout_marginTop="-80dp"
-        android:background="#00000000" />
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginBottom="30dp"
+        app:layout_constraintMarginEnd="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="156dp"
         android:fontFamily="@font/bricksans"
+        android:rotation="-4"
         android:text="BOLA"
         android:textColor="@color/black"
-        android:textSize="50dp"
-        android:layout_marginTop="-527dp"
-        android:rotation="-4"
-        android:layout_marginLeft="237dp"/>
+        android:textSize="50sp"
+        app:layout_constraintMarginStart="220dp"
+        app:layout_constraintMarginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/colorOut"
         android:layout_width="wrap_content"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="164dp"
         android:fontFamily="@font/bricksans"
-        android:text="P U T I H"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        android:layout_marginTop="10dp"
         android:rotation="-4"
-        android:layout_marginLeft="205dp"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:shadowRadius="7"/>
+        android:shadowRadius="7"
+        android:text="P U T I H"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintMarginStart="180dp"
+        app:layout_constraintMarginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuButton" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
